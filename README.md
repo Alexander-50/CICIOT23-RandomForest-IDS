@@ -109,5 +109,3 @@ If you use this dataset or reference this work, please cite:
 📧 *Reach out via [GitHub](https://github.com/Alexander-50) for research collaborations.*
 
 ---
-
-Would you like me to include a **“Usage” section** next — showing exact example commands or notebook cells to run model training and live detection? It would make the repo more practical for others using it.
