@@ -73,13 +73,45 @@ The model performs with extremely high accuracy, demonstrating its effectiveness
 
 Performance Metrics
 
-Overall Accuracy: 99.76%
+Metric
 
-Anomaly Precision: 99.90%
+Overall Score
 
-Anomaly Recall: 99.85%
+Anomaly Class (1)
 
-Anomaly F1-Score: 0.9988
+Benign Class (0)
+
+Accuracy
+
+99.76%
+
+-
+
+-
+
+Precision
+
+-
+
+0.9990
+
+0.94
+
+Recall
+
+-
+
+0.9985
+
+0.96
+
+F1-Score
+
+-
+
+0.9988
+
+0.95
 
 Classification Report
 
@@ -97,10 +129,6 @@ Confusion Matrix
 
 The confusion matrix shows a very low number of False Positives (1,123) and False Negatives (1,711) compared to the millions of correct predictions.
 
-(Note: Assumes you have created an images folder in your repository)
-
 Feature Importance
 
 The model identified Inter-Arrival Time (IAT) and specific flag counts (rst_count, urg_count) as the most significant indicators of an anomaly.
-
-(Note: Assumes you have created an images folder in your repository)
