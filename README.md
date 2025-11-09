@@ -1,8 +1,3 @@
-Perfect — here’s a **clean, complete, GitHub-ready `README.md`** for your project (without the mermaid graph).
-It’s formatted for **direct copy–paste** into readme.so or GitHub — no extra markdown wrappers, indentation issues, or font mismatches.
-Everything is compact, professional, and well-structured.
-
-
 # 🔍 IoT Anomaly Detection using Random Forest (CICIoT23 Dataset)
 
 ### ⚡ A Machine Learning-based Intrusion Detection System for IoT Network Traffic
@@ -59,6 +54,15 @@ It contains both **benign traffic** and multiple **IoT attack types** such as DD
 
 ---
 
+---
+
+## 🔄 Automated ML Workflow
+
+<img src="https://github.com/user-attachments/assets/3228e4b0-564f-4ece-b2b6-2b7299867f7e" alt="IoT Anomaly Detection Workflow" width="100%" />
+
+---
+
+
 ## 📊 Model Performance
 
 | Metric                  | Value  |
@@ -67,9 +71,6 @@ It contains both **benign traffic** and multiple **IoT attack types** such as DD
 | **Precision (Anomaly)** | 0.9990 |
 | **Recall (Anomaly)**    | 0.9985 |
 | **F1-Score (Anomaly)**  | 0.9988 |
-
-> ✅ The model demonstrates high robustness and reliability for IoT anomaly detection.
-
 ---
 
 ## 💡 Key Features
@@ -88,39 +89,6 @@ It contains both **benign traffic** and multiple **IoT attack types** such as DD
 * **Libraries:** `pandas`, `numpy`, `scikit-learn`, `matplotlib`, `joblib`
 * **Environment:** Kaggle / Jupyter Notebook / Local Python
 * **Outputs:** `.pkl` model, metrics file, anomaly reports
-
----
-
-## 🚀 Future Enhancements
-
-* Develop a **web or desktop app** to upload and analyze CSV IoT traffic
-* Integrate **real-time IoT packet monitoring** (MQTT, CoAP, etc.)
-* Extend with **ensemble models** for hybrid intrusion detection
-* Build a **visual dashboard** for live anomaly reporting
-
----
-
-## 📁 Project Structure
-
-```
-IoT-RF-IDS/
-├── data/
-│   ├── merged_train.csv
-│   ├── merged_test.csv
-│   └── merged_validation.csv
-├── models/
-│   ├── rf_ids_model.pkl
-│   └── ids_scaler.pkl
-├── notebooks/
-│   ├── data_preprocessing.ipynb
-│   ├── model_training.ipynb
-│   └── live_detection.ipynb
-├── outputs/
-│   ├── anomalous_flows_report.csv
-│   └── metrics.txt
-└── README.md
-```
-
 ---
 
 ## 🧾 Citation
@@ -130,15 +98,16 @@ If you use this dataset or reference this work, please cite:
 > **Dataset:** Sharafaldin, I., Lashkari, A. H., & Ghorbani, A. A. (2023). *CICIoT2023: A realistic IoT dataset for intrusion detection research*. Canadian Institute for Cybersecurity.
 
 ---
+---
 
 ## 👨‍💻 Author
 
-**Alexander P.B.**
-Cybersecurity & ML Research | Red Team & IoT Security
-📧 *Reach out via GitHub for research collaborations.*
+**Alexander P.B.**  
+*Cybersecurity Researcher & Penetration Tester*  
+*Red Team & IoT Security Specialist*  
+
+📧 *Reach out via [GitHub](https://github.com/Alexander-50) for research collaborations.*
 
 ---
-
-✅ *You can paste this directly into `README.md` — it’ll render perfectly on GitHub and in readme.so.*
 
 Would you like me to include a **“Usage” section** next — showing exact example commands or notebook cells to run model training and live detection? It would make the repo more practical for others using it.
