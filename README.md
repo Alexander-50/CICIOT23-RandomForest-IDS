@@ -1,4 +1,4 @@
-# 🔍 IoT Anomaly Detection using Random Forest (CICIoT23 Dataset)
+# 🔍 Anomaly Based Intrusion Detection in IoT using Random Forest (CICIoT23 Dataset)
 
 ### ⚡ A Machine Learning-based Intrusion Detection System for IoT Network Traffic
 
