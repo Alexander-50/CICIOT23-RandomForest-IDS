@@ -31,6 +31,18 @@ It contains both **benign traffic** and multiple **IoT attack types** such as DD
 
 ---
 
+---
+## ⚠️ Note
+Model binaries (`.pkl` files) are not included in this repository due to GitHub file-size limitations.
+
+To regenerate them, run the `train_ids.py` script.  
+This will create:
+
+- `rf_ids_model.pkl` — trained Random Forest IDS model  
+- `ids_scaler.pkl` — scaler object used for preprocessing  
+---
+
+
 ## ⚙️ Project Workflow
 
 ### **Phase 1 — Data Preparation**
@@ -54,6 +66,42 @@ It contains both **benign traffic** and multiple **IoT attack types** such as DD
 
 ---
 
+---
+## 🔄Architechtural Diagram
+
+```mermaid
+flowchart LR
+
+    %% ===== DATA & PREPROCESSING MODULE =====
+
+    A[Raw CICIoT23 Dataset] --> B[Data Preprocessing Module]
+    B --> B1[Cleaning and Normalization]
+    B --> B2[Encoding Categorical Features]
+    B --> B3[Feature Scaling]
+
+    B --> C[Preprocessed Datasets]
+
+    %% ===== MODEL TRAINING MODULE =====
+
+    C --> D[Random Forest Training Module]
+    D --> D1[Model Evaluation Engine]
+
+    D --> E[rf_ids_model.pkl]
+    B --> F[ids_scaler.pkl]
+
+    %% ===== LIVE DETECTION MODULE =====
+
+    H[New IoT Traffic CSV] --> G[Live Detection Module]
+    E --> G
+    F --> G
+
+    G --> I[Flow Classification]
+    I --> J[Report Generator]
+
+    J --> K1[anomalous_flows_report.csv]
+    J --> K2[anomalous_flows_report.html]
+```
+---
 ---
 
 ## 🔄 Automated ML Workflow
